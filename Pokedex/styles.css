@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    font-family: 'Lato';
+}
+header{
+    margin: 2rem 2rem 0 2rem;
+}
+body {
+	margin: 0;
+	width: 100%;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradiente 15s ease infinite;
+}
+main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80rem;
+}
+
+input{
+    width: 50%;
+    height: 3rem;
+    background-color: #adffc671;
+    color: black;
+    padding-left: 20px;
+    border-radius: 20px;
+    border: 0;
+    margin-right: 2em;
+    font-size: 1.5rem;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.container{
+    width: 600px;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.all{
+    /* height: 70%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+button{
+    background: rgb(0,255,102);
+    background: linear-gradient(90deg, rgba(0,255,102,1) 0%, rgba(17,216,114,1) 44%);
+    width: 10rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 60px;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+#pokeImg{
+    width: 40%;
+}
+#types{
+    text-transform: uppercase;
+}
+h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#pokeball{
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: invert(1);
+}
+.name{
+    width: 60%;
+    max-width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.details{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+.category{
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.stats{
+    margin-top: 6rem;
+    width: 55%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 102, 0);
+    font-family: 'Lato',sans-serif;
+    font-weight: bold;
+    padding: 7rem 3rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.progres{
+    margin-bottom: 1rem;
+    margin-top: 1em;
+    width: 20rem;
+    height: 0.7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0.5em;
+}
+
+.progres-bg{
+    background-color: rgb(173, 173, 173);
+    width: 100%;
+}
+.value{
+    background-color: #ee7752;
+    width: 0%;
+    height: 100%;
+}
+.start{
+    border-radius: 20px 0px 0px 20px;
+}
+.end{
+    border-radius: 0px 20px 20px 0px;
+}
+.rating{
+    position: relative;
+    width: 30%;
+    top: -25rem;
+    left: -12rem;
+    transform: rotate(-20deg);
+}
+
+footer{
+    background-color: rgba(240, 248, 255, 0.473);
+    display: flex;
+    justify-content: space-around;
+}
+.links{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@keyframes gradiente {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

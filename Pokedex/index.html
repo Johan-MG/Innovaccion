@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <header>
+        <img src="images/go.png" alt="" width="200px">
+    </header>
+    <main>
+        <div class="container">
+            <div class="all">
+                <div class="input">
+                    <input type="text" id="pokeName" name="pokeName" placeholder="Esciba un pokémon">
+                    <button type="submit" onclick="fetchPokemon()">Buscar</button>
+                </div>
+                <img src="images/poke.jpg" id="pokeImg" alt="">
+                <div class="name">
+                    <img src="images/pokeball.png" id="pokeball" alt="">
+                    <h3 id="number"></h3>
+                    <h3 id="name">---</h3>
+                </div>
+                <div class="details">
+                    <span class="text">WEIGHT: <span id="weight">---</span> kg</span>
+                    <span class="text">HEIGHT: <span id="height">---</span> m</span>
+                    <span class="text">TYPE: <span id="types">---</span></span>
+                </div>
+                <div class="category">
+                    <h4 id="category">---</h4>
+                </div>
+                <p class="text" id="description">---</p>
+            </div>
+            <div class="stats">
+                <span>Attack</span>
+                <div class="progres">
+                    <div class="progres-bg start">
+                        <div class="value start" id="attack_1">
+
+                        </div>
+                    </div>
+                    <div class="progres-bg">
+                        <div class="value" id="attack_2">
+
+                        </div>
+                    </div>
+                    <div class="progres-bg end">
+                        <div class="value end" id="attack_3">
+
+                        </div>
+                    </div>
+                </div>
+                <span>Defense</span>
+                <div class="progres">
+                    <div class="progres-bg start">
+                        <div class="value start" id="defense_1">
+
+                        </div>
+                    </div>
+                    <div class="progres-bg">
+                        <div class="value" id="defense_2">
+
+                        </div>
+                    </div>
+                    <div class="progres-bg end">
+                        <div class="value end" id="defense_3">
+
+                        </div>
+                    </div>
+                </div>
+                <span>HP</span>
+                <div class="progres">
+                    <div class="progres-bg start">
+                        <div class="value start" id="hp_1">
+
+                        </div>
+                    </div>
+                    <div class="progres-bg">
+                        <div class="value" id="hp_2">
+
+                        </div>
+                    </div>
+                    <div class="progres-bg end">
+                        <div class="value end" id="hp_3">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="rating" id="rating" src="images/Default.webp" alt="" width="250px">
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h4 class="category">Johan Morales García</h4>
+        </div>
+        <div class="links">
+            <a href="https://github.com/Johan-MG">
+                <img src="images/github.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/johan_mg_1239/">
+                <img src="images/twitter.png" alt="">
+            </a>
+            <a href="https://twitter.com/pain1239">
+                <img src="images/instagram.png" alt="">
+            </a>
+        </div>
+    </footer>
+    <script src="pokedex.js"></script>
+</body>
+</html>
